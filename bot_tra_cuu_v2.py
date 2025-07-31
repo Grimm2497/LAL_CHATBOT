@@ -1,8 +1,9 @@
 
 import telebot
 import pandas as pd
+import os
 
-BOT_TOKEN = '8291719250:AAG4eA06fKTJXuuOpQoRWFNOk9kcn7XNtUw'  # ← Thay bằng token bot từ BotFather
+BOT_TOKEN = os.environ.get("8291719250:AAG4eA06fKTJXuuOpQoRWFNOk9kcn7XNtUw")  # ← Thay bằng token bot từ BotFather
 bot = telebot.TeleBot(BOT_TOKEN)
 
 # Đọc dữ liệu từ file
